@@ -1,0 +1,35 @@
+.border-bottom {
+	border-bottom: 3px solid #9F2241 !important;
+}
+
+.btn-primary, .btn:focus, .btn:active .btn:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:hover{
+	background-color: #ea0d45;
+	border-color: #9F2241;
+}
+
+button.btn.btn-primary.btn-lg.btn-block {
+	background-color: #9F2241;
+}
+
+.border-top {
+	border-top: 3px solid #9F2241 !important;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4, h5, button{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}

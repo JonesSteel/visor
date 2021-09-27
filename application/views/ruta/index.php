@@ -1,93 +1,110 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Visor Provisional</title>
-
-	<style type="text/css">
-
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
-
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
-
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
-
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div id="container">
-	<h1> Módulos de Consulta Rápida!</h1>
-
-	<div id="body">
-     <center> 
-        <p>SELECCIONA EL PROGRAMA </p>
-        <hr>
-      <!--  <p>	<a href="http://10.5.95.91/visor/Visores/velodromo_regularizacion">Velodromo Regularización</a>.</p> -->
-        <p>	<a href="http://10.5.95.91/visor/Visores/taxi_sustitucion">Taxi Sustitución</a>.</p>
-      
-	
-
-        <p><a href="http://10.5.95.91/visor/Visores/sustitucion" > Sustitución </a></p>
-	  
-    
-    </center>
-	</div>
-
-	<p class="footer">
-        <strong>RPT 2021</strong> VERSION 1.0 </p>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+	<nav class="my-2 my-md-0 mr-md-3">
+		<a class="navbar-brand">
+			<img src="<?php echo base_url(); ?>/assets/img/new_cdmx_logo.png" width="20%" class="img-responsive" alt="boostrap responsive image" />
+		</a>
+	</nav>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<h1 class="display-4"><strong>Módulos de Consulta Rápida</strong></h1>
+	<p class="lead">Vista rápida de los módulos de consulta que se han desarrollado dentro de la <strong>Dirección General del Registro Público del Transporte.</strong></p>
 </div>
 
+<div class="container">
+	<div class="card-deck mb-3 text-center">
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Taxi Sustitución</h4>
+			</div>
+			<div class="card-body">
+				<p style="text-align: justify">Aplicación que nos permite consultar los documentos con los que cuenta cada concesión de Taxi que entro al <strong>programa de sustitución.</strong></p>
+				<br>
+				<button onclick="location.href='http://10.5.95.91/visor/Visores/taxi_sustitucion'" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
+			</div>
+		</div>
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Sustitución (Pre-registro 2020)</h4>
+			</div>
+			<div class="card-body">
+				<p style="text-align: justify">Aplicación que nos permite consultar los documentos con los que cuenta cada concesión de Ruta que entro al <strong>programa de chatarrización.</strong></p>
+				<br>
+				<button onclick="location.href='http://10.5.95.91/visor/Visores/sustitucion'" class="btn btn-lg btn-block btn-primary">Seleccionar</button>
+			</div>
+		</div>
+	</div>
+	<footer class="pt-4 my-md-5 pt-md-5 border-top" style="padding-top: 2rem !important;">
+		<div class="row">
+			<div class="col-6 col-md" style="text-align: justify">
+				<h5><strong>Atención Ciudadana</strong></h5>
+				<p><strong>Dirección:</strong> Avenida Alavaro Obregón 269, Colonia Roma Norte,
+				Alcaldia Cuauthémoc, C.P. 06700, Ciudad de México.</p>
+			</div>
+			<div class="col-6 col-md">
+				<h5><strong>Navegación</strong></h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/">Inicio</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/secretaria">Secretaria</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/programas-de-mejora-del-transporte-publico">Programa de Mejora del Transporte Público</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/movilidad-integrada">Movilidad Integrada</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/tramites-y-servicios">Tramites y Servicios</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/tramites-y-servicios/transparencia">Gobierno Abierto</a></li>
+					<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/transparencia">Transparencia</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5><strong>Sitios Relacionados</strong></h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="https://www.sedema.cdmx.gob.mx/">Secretaria del Medio Ambiente</a></li>
+					<li><a class="text-muted" href="https://www.ssc.cdmx.gob.mx/">Secretaria de Seguridad Pública</a></li>
+					<li><a class="text-muted" href="https://www.ste.cdmx.gob.mx/">Servicio de Transporte Eléctrico</a></li>
+					<li><a class="text-muted" href="https://www.metro.cdmx.gob.mx/">Sistema de Transporte Colectivo</a></li>
+					<li><a class="text-muted" href="https://www.metrobus.cdmx.gob.mx/">Metrobús</a></li>
+					<li><a class="text-muted" href="http://www.rtp.gob.mx/">Red de Transporte de Pasajeros</a></li>
+					<li><a class="text-muted" href="https://www.ort.cdmx.gob.mx/">CETRAM</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<div class="footer-info">
+					<a href="https://plazapublica.cdmx.gob.mx/uploads/decidim/attachment/file/12/plan_gob_nov_digital.pdf" target="_blank">
+						<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5dc/9f6/4d9/5dc9f64d919ce331367401.png" width="100px" height="75px">
+					</a>
+				</div>
+				<br>
+				<div class="footer-info">
+					<a href="https://datos.cdmx.gob.mx/" target="_blank">
+						<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5cc/0fb/d84/5cc0fbd84b72f540674022.png" width="100px" height="75px">
+					</a>
+				</div>
+				<br>
+				<div class="footer-info">
+					<a href="https://www.tianguisdigital.cdmx.gob.mx/" target="_blank">
+						<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5dc/9f6/a8a/5dc9f6a8aa582467576890.png" width="100px" height="75px">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
