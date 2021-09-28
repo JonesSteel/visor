@@ -80,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<li><a class="text-muted" href="https://www.ort.cdmx.gob.mx/">CETRAM</a></li>
 				</ul>
 			</div>
-			<div class="col-6 col-md">
+			<div class="col-6 col-md" style="text-align: center">
 				<div class="footer-info">
 					<a href="https://plazapublica.cdmx.gob.mx/uploads/decidim/attachment/file/12/plan_gob_nov_digital.pdf" target="_blank">
 						<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5dc/9f6/4d9/5dc9f64d919ce331367401.png" width="100px" height="75px">

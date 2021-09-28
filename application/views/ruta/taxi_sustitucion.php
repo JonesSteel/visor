@@ -26,9 +26,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	}
 
 	h1 {
-		color: #444;
+		color: #9F2241;
 		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
+		border-bottom: 1px solid #9F2241;
 		font-size: 19px;
 		font-weight: normal;
 		margin: 0 0 14px 0;
@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	p.footer {
 		text-align: right;
 		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
+		border-top: 1px solid #9F2241;
 		line-height: 32px;
 		padding: 0 10px 0 10px;
 		margin: 20px 0 0 0;
@@ -61,7 +61,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	#container {
 		margin: 10px;
-		border: 1px solid #D0D0D0;
+		border: 1px solid #9F2241;
 		box-shadow: 0 0 8px #D0D0D0;
 	}
 	</style>
@@ -69,14 +69,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-<h1>Selecciona la Placa del Programa  Taxi Sustitución</h1>
+<h1 style="color="#9F2241";>Selecciona la Placa del Programa  Taxi Sustitución</h1>
 <br> <center><button type="button" class="btn btn-primary btn-lg" onclick="location.href='http://10.5.95.91/visor/Visores'">Regresa a Menú Principal</button> <br><br>
 
 	<div id="body">
-		<iframe  width="1750" height="1100"
-			src="http://10.5.95.91/visualizador-taxi/"
-		>	
-    </iframe>	
+		<!--<iframe  width="1750" height="1100"
+			src="http://10.5.95.91/visualizador-taxi/">
+    </iframe>-->
 
 	</div>
 	</center>   

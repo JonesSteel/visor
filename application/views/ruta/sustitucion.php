@@ -74,10 +74,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<center><button type="button" class="btn btn-primary btn-lg" onclick="location.href='http://10.5.95.91/visor/Visores'">Regresa a Menú Principal</button> <br><br>
 
 <div id="body">
-	<iframe  width="1750" height="1100"
-		src="http://10.5.95.91/sustitucion-ruta/"  
-	>	
-</iframe>	
+	<!--<iframe  width="1750" height="1100"
+		src="http://10.5.95.91/sustitucion-ruta/">
+</iframe>-->
 
 </div>
 </center>
