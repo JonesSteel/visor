@@ -22,8 +22,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</nav>
 </div>
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-	<h1 class="display-4"><strong>Módulos de Consulta Rápida</strong></h1>
-	<p class="lead">Vista rápida de los módulos de consulta que se han desarrollado dentro de la <strong>Dirección General del Registro Público del Transporte.</strong></p>
+	<h1 class="display-4" style="text-align: center"><strong>Módulos de Consulta Rápida</strong> | DGRPT</h1>
+	<p class="lead">Vista rápida de los módulos de consulta que se han desarrollado dentro de la <strong>SCyVBDRT.</strong></p>
 </div>
 
 <div class="container">
