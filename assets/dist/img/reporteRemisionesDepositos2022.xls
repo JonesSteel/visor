@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reporte</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	
+		<table class="table table-bordered" style="text-align: left;">
+			<thead>
+				<tr>
+					
+						<th>cve_remision</th>
+
+					
+						<th>folio</th>
+
+					
+						<th>folio_acta</th>
+
+					
+						<th>nombre_deposito</th>
+
+					
+						<th>calles</th>
+
+					
+						<th>colonia</th>
+
+					
+						<th>delegacion</th>
+
+					
+						<th>fecha_hora_remision</th>
+
+					
+						<th>placa</th>
+
+					
+						<th>vehiculo</th>
+
+					
+						<th>marca</th>
+
+					
+						<th>modelo</th>
+
+					
+						<th>cromatica</th>
+
+					
+						<th>estatus</th>
+
+					
+						<th>propietario_nombre</th>
+
+					
+						<th>tarjeta_circulacion_nombre</th>
+
+					
+						<th>licencia_nombre</th>
+
+					
+						<th>licencia_tipo</th>
+
+					
+				</tr>
+			</thead>
+			<tbody>
+				
+					<tr>
+						
+							<td>1</td>
+
+						
+							<td>1/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>ALVARO OBREGON</td>
+
+						
+							<td>2022-03-15 12:00:00</td>
+
+						
+							<td>0010001</td>
+
+						
+							<td>AUTOBUS</td>
+
+						
+							<td>RENAULT</td>
+
+						
+							<td>1989</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>S</td>
+
+						
+							<td>PROPIETARIO UPDATE</td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION</td>
+
+						
+							<td>NOMBRE LICENCIA</td>
+
+						
+							<td>C</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>2</td>
+
+						
+							<td>2/2022</td>
+
+						
+							<td>OV/2/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>ALVARO OBREGON</td>
+
+						
+							<td>2022-03-16 15:16:00</td>
+
+						
+							<td>0010002</td>
+
+						
+							<td>COMBI</td>
+
+						
+							<td>FORD</td>
+
+						
+							<td>1991</td>
+
+						
+							<td>ROSA</td>
+
+						
+							<td>S</td>
+
+						
+							<td>PROPIETARIO</td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION</td>
+
+						
+							<td>NOMBRE LICENCIA</td>
+
+						
+							<td>C</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>3</td>
+
+						
+							<td>3/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>ALVARO OBREGON</td>
+
+						
+							<td>2022-03-17 13:09:00</td>
+
+						
+							<td>0010003</td>
+
+						
+							<td>AUTOBUS</td>
+
+						
+							<td>ALEXANDER DENNIS</td>
+
+						
+							<td>1991</td>
+
+						
+							<td>ROSA</td>
+
+						
+							<td>S</td>
+
+						
+							<td>PROPIETARIO</td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA UPDATE</td>
+
+						
+							<td>A1</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>4</td>
+
+						
+							<td>4/2022</td>
+
+						
+							<td>OV/655/2022 UPDATE</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN UPDATE</td>
+
+						
+							<td>AZCAPOTZALCO</td>
+
+						
+							<td>2022-03-17 16:07:00</td>
+
+						
+							<td>A0001A</td>
+
+						
+							<td>MICROBUS</td>
+
+						
+							<td>HINO</td>
+
+						
+							<td>1991</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>A</td>
+
+						
+							<td></td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA UPDATE</td>
+
+						
+							<td>D</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>5</td>
+
+						
+							<td>5/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>TLALPAN</td>
+
+						
+							<td>2022-03-17 18:45:00</td>
+
+						
+							<td>0010003</td>
+
+						
+							<td>MICROBUS</td>
+
+						
+							<td>MASA</td>
+
+						
+							<td>1992</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>A</td>
+
+						
+							<td></td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA</td>
+
+						
+							<td>C</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>6</td>
+
+						
+							<td>6/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN UPDATE</td>
+
+						
+							<td>ALVARO OBREGON</td>
+
+						
+							<td>2022-03-17 18:48:00</td>
+
+						
+							<td>A0001A</td>
+
+						
+							<td>AUTOBUS</td>
+
+						
+							<td>ALEXANDER DENNIS</td>
+
+						
+							<td>1991</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>A</td>
+
+						
+							<td></td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA UPDATE</td>
+
+						
+							<td>E</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>7</td>
+
+						
+							<td>7/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>MILPA ALTA</td>
+
+						
+							<td>2022-03-17 18:49:00</td>
+
+						
+							<td>A0001A</td>
+
+						
+							<td>AUTOBUS</td>
+
+						
+							<td>ALEXANDER DENNIS</td>
+
+						
+							<td>1991</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>S</td>
+
+						
+							<td>PROPIETARIO</td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA UPDATE</td>
+
+						
+							<td>C</td>
+
+						
+					</tr>
+
+				
+					<tr>
+						
+							<td>8</td>
+
+						
+							<td>8/2022</td>
+
+						
+							<td>OV/1/2022</td>
+
+						
+							<td>SAN ANDRES</td>
+
+						
+							<td>REFORMA Y JUAREZ</td>
+
+						
+							<td>TIZAPAN</td>
+
+						
+							<td>LA MAGDALENA CONTRERAS</td>
+
+						
+							<td>2022-03-17 18:53:00</td>
+
+						
+							<td>0010002</td>
+
+						
+							<td>AUTOBUS</td>
+
+						
+							<td>HINO</td>
+
+						
+							<td>1993</td>
+
+						
+							<td>ROSA UPDATE</td>
+
+						
+							<td>S</td>
+
+						
+							<td>PROPIETARIO</td>
+
+						
+							<td>NOMBRE TARJETA CIRCULACION UPDATE</td>
+
+						
+							<td>NOMBRE LICENCIA UPDATE</td>
+
+						
+							<td>D</td>
+
+						
+					</tr>
+
+							</tbody>
+		</table>
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

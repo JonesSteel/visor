@@ -1,90 +1,149 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+defined('BASEPATH') or exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>Listado Sustitución</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<style type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Visor RPT</title>
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css'); ?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+	<style>
+		.btn-primary,
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary:visited,
+		.btn-primary:focus {
+			background-color: #235B4E;
+			border-color: #235B4E;
+		}
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+		.swal2-popup .swal2-styled:focus {
+			box-shadow: none !important;
+		}
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
-
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
-
-	#body {
-		margin: 0 15px 0 15px;
-	}
-
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
-
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
+		.btn-primary:not(:disabled):not(.disabled).active,
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.show>.btn-primary.dropdown-toggle {
+			color: #fff;
+			background-color: #235B4E;
+			border-color: #235B4E;
+		}
 	</style>
 </head>
-<body>
 
-<div id="container">
-	<h1>Selecciona la Placa del Programa de Sustitución</h1>
-
-	<div id="body">
-	<center><button type="button" class="btn btn-primary btn-lg" onclick="location.href='http://10.5.95.91/visor/Visores'">Regresa a Menú Principal</button> <br><br>
-
-<div id="body">
-	<!--<iframe  width="1750" height="1100"
-		src="http://10.5.95.91/sustitucion-ruta/">
-</iframe>-->
-
-</div>
-</center>
-       
+<body style="height: 100vh; overflow: auto;">
+	<?php //$url = 'localhost';
+	$url='10.5.95.91'; 
+	?>
+	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="navbar-brand">
+				<img src="<?php echo base_url(); ?>/assets/img/new_cdmx_logo.png" width="20%" class="img-responsive" alt="boostrap responsive image" />
+			</a>
+		</nav>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
+	<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<p style="text-align: center"><strong>Módulos de Consulta Rápida</strong> | DGRPT</p>
+		<p class="lead">
+			<a href="http://<?php echo $url ?>/visor/Visores">
+				<i class='fas fa-home' style="font-size:20px;color:#2f6997;"></i></i>Regresar a Principal 
+			</a>
+			&nbsp;
+			<a href="http://<?php echo $url ?>/visor/Visores/acciones_2020">
+			<i style="font-size:20px;color:#2f6997;">/ &nbsp;<b> Acciones Sociales 2020</b></i>
+			</a>
+			&nbsp; <i style="font-size:20px;color:#235B4E;">/ &nbsp;<b> Sustitución (Pre-Registro2020) </b></i>
+		</p>
 
+
+
+
+		<div class="container">
+			<div id="container">
+			
+				<div id="body">
+					
+
+						<div id="body">
+							<iframe width="1200" height="1100" src="http://<?php echo $url ?>/sustitucion-ruta/" frameborder="0">
+							</iframe>
+
+						</div>
+					</center>
+
+				</div>
+
+				<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+			</div>
+
+
+			<footer class="pt-4 my-md-5 pt-md-5 border-top" style="padding-top: 1rem !important;">
+				<div class="row">
+					<div class="col-6 col-md" style="text-align: justify">
+						<h5><strong>Atención Ciudadana</strong></h5>
+						<p><strong>Dirección:</strong> Avenida Alavaro Obregón 269, Colonia Roma Norte,
+							Alcaldia Cuauthémoc, C.P. 06700, Ciudad de México.</p>
+					</div>
+					<div class="col-6 col-md">
+						<h5><strong>Navegación</strong></h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/">Inicio</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/secretaria">Secretaria</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/programas-de-mejora-del-transporte-publico">Programa de Mejora del Transporte Público</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/movilidad-integrada">Movilidad Integrada</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/tramites-y-servicios">Tramites y Servicios</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/tramites-y-servicios/transparencia">Gobierno Abierto</a></li>
+							<li><a class="text-muted" href="https://www.semovi.cdmx.gob.mx/transparencia">Transparencia</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md">
+						<h5><strong>Sitios Relacionados</strong></h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="https://www.sedema.cdmx.gob.mx/">Secretaria del Medio Ambiente</a></li>
+							<li><a class="text-muted" href="https://www.ssc.cdmx.gob.mx/">Secretaria de Seguridad Pública</a></li>
+							<li><a class="text-muted" href="https://www.ste.cdmx.gob.mx/">Servicio de Transporte Eléctrico</a></li>
+							<li><a class="text-muted" href="https://www.metro.cdmx.gob.mx/">Sistema de Transporte Colectivo</a></li>
+							<li><a class="text-muted" href="https://www.metrobus.cdmx.gob.mx/">Metrobús</a></li>
+							<li><a class="text-muted" href="http://www.rtp.gob.mx/">Red de Transporte de Pasajeros</a></li>
+							<li><a class="text-muted" href="https://www.ort.cdmx.gob.mx/">CETRAM</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md" style="text-align: center">
+						<div class="footer-info">
+							<a href="https://plazapublica.cdmx.gob.mx/uploads/decidim/attachment/file/12/plan_gob_nov_digital.pdf" target="_blank">
+								<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5dc/9f6/4d9/5dc9f64d919ce331367401.png" width="95px" height="65px">
+							</a>
+						</div>
+						<br>
+						<div class="footer-info">
+							<a href="https://datos.cdmx.gob.mx/" target="_blank">
+								<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5cc/0fb/d84/5cc0fbd84b72f540674022.png" width="95px" height="65px">
+							</a>
+						</div>
+						<br>
+						<div class="footer-info">
+							<a href="https://www.tianguisdigital.cdmx.gob.mx/" target="_blank">
+								<img src="https://www.semovi.cdmx.gob.mx/storage/app/uploads/public/5dc/9f6/a8a/5dc9f6a8aa582467576890.png" width="95px" height="65px">
+							</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="<?php echo base_url('assets/js/jquery-3.4.1.min.js') ?>"></script>
+		<script src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
+		<script src="<?php echo base_url('assets/js/bootstrap.js'); ?>"></script>
 </body>
+
 </html>
